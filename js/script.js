@@ -18,9 +18,18 @@
 /!**************************************************************************************************************************************************/
 
 
-//*Variabili per il form
+//* VARIABILI DEL FORM
 
 var nameField = document.getElementById('name');
 var kmField = document.getElementById('km');
 var ageField = document.getElementById('age');
 var button = document.getElementById('gen-ticket');
+
+//* VARIABILI DEL TICKET
+
+var nameElement = document.getElementById('name');
+var kmElement = document.getElementById('km');
+var ageElement = document.getElementById('age');
+var wagonElement = document.getElementById('wagon');
+var trainNumElement = document.getElementById('train-num');
+var priceElement = document.getElementById('price');
