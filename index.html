@@ -9,8 +9,38 @@
     <title>Biglietto del treno</title>
 </head>
 <body>
-    
+    <!--HEADER-->
+    <header class="container-fluid bg-dark my-s-height mb-5">
 
+    </header>
+    
+    <!--MAIN-->
+    <section id="form-ticket" class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="mb-2">
+                    <label for="name">Nome e Cognome del passeggero</label>
+                    <input type="text" class="form-field" id="name">
+                </div>
+                <div class="mb-2">
+                    <label for="km">Quanti Km vorresti percorrere?</label>
+                    <input type="number" class="form-field" id="name" min="5">
+                </div>
+                <div class="mb-2">
+                    <label for="age">Fascia d'età del passeggero</label>
+                    <select id="age">
+                        <option value="min"> - 18</option>
+                        <option value="maj"> + 18</option>
+                        <option value="over65"> > 65</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <button type="button" class="btn btn-danger" id="gen-ticket">Genera il biglietto</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </main>
     <script src="./js/script.js"></script>
 </body>
 </html>
