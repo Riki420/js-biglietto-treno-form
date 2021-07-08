@@ -42,13 +42,39 @@ button.addEventListener('click', function () {
     //recupero dei valori
     var nameValue = nameField.value;
     console.log(nameValue);
-    
+
     var kmValue = kmField.value;
     console.log(kmValue);
 
     var ageValue = ageField.value;
     console.log(ageValue);
 
+    //calcolo del biglietto
+    var price = 0.21 * kmValue;
+    var discounDisplay = 'Tariffa Ordinaria';
 
+    //! verifica dell'età
+    if (age === 'min') {
+        price *= 0.6;
+        discounDisplay = 'Tariffa Minorenni'
+        
+      } 
+    
+      if (age === 'over65'){
+        price *= 0.8;
+        discounDisplay = 'Tariffa Over'
+       
+      }
+
+      //arrotonadamento decimali
+
+      price = 'Euro' + price.toFixed(2);
+
+
+      //finta carrozza
+
+      var wagonNum = Math.floor(Math.round() * 10) + 1;
+      
+      //*STAMPA ELEMENTI
 
 });
