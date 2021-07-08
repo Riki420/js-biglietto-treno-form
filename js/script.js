@@ -28,9 +28,8 @@ var button = document.getElementById('gen-ticket');
 //* VARIABILI DEL TICKET
 
 var ticketSection = document.getElementById('ticket-sctn');
-var nameElement = document.getElementById('name');
+var nameElement = document.getElementById('name-place');
 var discountElement = document.getElementById('discount')
-var kmElement = document.getElementById('km');
 var wagonElement = document.getElementById('wagon');
 var trainNumElement = document.getElementById('train-num');
 var priceElement = document.getElementById('price');
@@ -51,18 +50,18 @@ button.addEventListener('click', function () {
 
     //calcolo del biglietto
     var price = 0.21 * kmValue;
-    var discounDisplay = 'Tariffa Ordinaria';
+    var discountDisplay = 'Tariffa Ordinaria';
 
     //! verifica dell'età
-    if (age === 'min') {
+    if (ageValue === 'min') {
         price *= 0.6;
-        discounDisplay = 'Tariffa Minorenni'
+        discountDisplay = 'Tariffa Minorenni'
         
       } 
     
-      if (age === 'over65'){
+      if (ageValue === 'over65'){
         price *= 0.8;
-        discounDisplay = 'Tariffa Over'
+        discountDisplay = 'Tariffa Over'
        
       }
 
@@ -73,8 +72,15 @@ button.addEventListener('click', function () {
 
       //finta carrozza
 
-      var wagonNum = Math.floor(Math.round() * 10) + 1;
+      var wagonNum = Math.floor(Math.round() * 12) + 1;
+      console.log('vagone: ' + wagonNum);
       
       //*STAMPA ELEMENTI
+
+      nameElement.innerHTML =  nameValue;
+      discountElement.innerHTML = discountDisplay;
+      priceElement.innerHTML = price;
+      trainNumElement.innerHTML = '85367'; 
+      wagonElement.innerHTML = wagonNum;
 
 });
