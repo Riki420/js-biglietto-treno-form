@@ -24,6 +24,7 @@ var nameField = document.getElementById('name');
 var kmField = document.getElementById('km');
 var ageField = document.getElementById('age');
 var button = document.getElementById('gen-ticket');
+var resetButton = document.getElementById('reset');
 
 //* VARIABILI DEL TICKET
 
@@ -82,5 +83,21 @@ button.addEventListener('click', function () {
       priceElement.innerHTML = price;
       trainNumElement.innerHTML = '85367'; 
       wagonElement.innerHTML = wagonNum;
+
+});
+
+//* BOTTONE RESET
+
+resetButton.addEventListener('click', function(){
+    nameField.value = '';
+    kmField.value = '5';
+    ageField.value = 'maj';
+
+    nameElement.innerHTML = '';
+    discountElement.innerHTML = '';
+    wagonElement.innerHTML = '';
+    trainNumElement.innerHTML = '';
+    priceElement.innerHTML = '';
+
 
 });

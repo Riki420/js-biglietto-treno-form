@@ -20,15 +20,15 @@
             <div class="col-12" id="form-sctn">
                 <h1 class="mb-4">COMPILA IL FORM</h1>
                 <div class="mb-2">
-                    <label for="name">Nome e Cognome del passeggero</label>
+                    <label for="name"><strong>Nome e Cognome del passeggero</strong></label>
                     <input type="text" class="form-field" id="name">
                 </div>
                 <div class="mb-2">
-                    <label for="km">Quanti Km vorresti percorrere?</label>
+                    <label for="km"><strong>Quanti Km vorresti percorrere?</strong></label>
                     <input type="number" class="form-field" id="km" min="5" value="5">
                 </div>
                 <div class="mb-2">
-                    <label for="age">Fascia d'età del passeggero</label>
+                    <label for="age"><strong>Fascia d'età del passeggero</strong></label>
                     <select id="age">
                         <option value="min"> - 18</option>
                         <option value="maj"> + 18</option>
@@ -36,27 +36,28 @@
                     </select>
                 </div>
                 <div class="mb-2">
-                    <button type="button" class="btn btn-danger" id="gen-ticket">Genera il biglietto</button>
+                    <button type="button" class="btn btn-danger mt-4" id="gen-ticket">Genera il biglietto</button>
+                    <button type="button" class="btn btn-danger mt-4" id="reset">Reset</button>
                 </div>
             </div>
-            <hr>
+            <hr class="mb-4 mt-4">
             <!--RISULTATO FINALE-->
             <div class="col-12" id="ticket-sctn">
                 <h1 class="mb-4">IL TUO BIGLIETTO</h1>
                 <p>
-                    Nome del passeggero: <span id="name-place"></span>
+                    <strong>Nome del passeggero: </strong><span id="name-place"></span>
                 </p>
                 <p>
-                    Tariffa: <span id="discount"></span>
+                    <strong>Tariffa: </strong><span id="discount"></span>
                 </p>
                 <p>
-                    Vagone: <span id="wagon"></span>
+                    <strong>Vagone: </strong><span id="wagon"></span>
                 </p>
                 <p>
-                    Numero del treno: <span id="train-num"></span>
+                    <strong>Numero del treno: </strong><span id="train-num"></span>
                 </p>
                 <p>
-                    Prezzo totale: <span id="price"></span>
+                    <strong>Prezzo totale: </strong><span id="price"></span>
                 </p>
             </div>
         </div>
