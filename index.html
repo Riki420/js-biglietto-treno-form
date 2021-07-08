@@ -13,12 +13,12 @@
     <header class="container-fluid bg-dark my-s-height mb-5">
 
     </header>
-    
+    <div class="container">
     <!--MAIN-->
-    <section id="form-ticket" class="container">
         <div class="row">
             <!--INIZIO FORM PER L'UTENTE-->
-            <div class="col-12">
+            <div class="col-12" id="form-sctn">
+                <h1 class="mb-4">COMPILA IL FORM</h1>
                 <div class="mb-2">
                     <label for="name">Nome e Cognome del passeggero</label>
                     <input type="text" class="form-field" id="name">
@@ -40,8 +40,27 @@
                 </div>
             </div>
             <hr>
+            <!--RISULTATO FINALE-->
+            <div class="col-12" id="ticket-sctn">
+                <h1 class="mb-4">IL TUO BIGLIETTO</h1>
+                <p>
+                    Nome del passeggero: <span id="name"></span>
+                </p>
+                <p>
+                    Tariffa: <span id="discount"></span>
+                </p>
+                <p>
+                    Vagone: <span id="wagon"></span>
+                </p>
+                <p>
+                    Numero del treno: <span id="train-num"></span>
+                </p>
+                <p>
+                    Prezzo totale: <span id="price"></span>
+                </p>
+            </div>
         </div>
-    </main>
+    </div>    
     <script src="./js/script.js"></script>
 </body>
 </html>
