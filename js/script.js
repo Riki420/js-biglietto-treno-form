@@ -15,7 +15,7 @@
 //*4 Calcolo del prezzo finale arrotondandolo con due decimali
 //*5 Stampo i dati inseriti dall'utente dentro i propri spazi
 
-/!**************************************************************************************************************************************************/
+/**************************************************************************************************************************************************/
 
 
 //* VARIABILI DEL FORM
@@ -27,9 +27,28 @@ var button = document.getElementById('gen-ticket');
 
 //* VARIABILI DEL TICKET
 
+var ticketSection = document.getElementById('ticket-sctn');
 var nameElement = document.getElementById('name');
+var discountElement = document.getElementById('discount')
 var kmElement = document.getElementById('km');
-var ageElement = document.getElementById('age');
 var wagonElement = document.getElementById('wagon');
 var trainNumElement = document.getElementById('train-num');
 var priceElement = document.getElementById('price');
+
+//* FACCIAMO FUNZIONARE QUEL BOTTONE
+
+button.addEventListener('click', function () {
+    
+    //recupero dei valori
+    var nameValue = nameField.value;
+    console.log(nameValue);
+    
+    var kmValue = kmField.value;
+    console.log(kmValue);
+
+    var ageValue = ageField.value;
+    console.log(ageValue);
+
+
+
+});
