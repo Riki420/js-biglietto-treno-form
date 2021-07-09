@@ -5,24 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Biglietto del treno</title>
 </head>
 <body>
     <!--HEADER-->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark text-dark bg-white my-border mb-4" aria-label="Fourth navbar example">
+    <header class="mb-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded my-border" aria-label="Eleventh navbar example">
             <div class="container-fluid">
-              <div class="collapse navbar-collapse my-grow" id="navbarsExample04">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                  <li class="nav-item fs-5">
-                    <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+              <a class="navbar-brand" href="#">
+                  <div>
+                      <img src="./img/Logo_Trenitalia.png" alt="Logo_Trenitalia" class="w-75">
+                  </div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
-                  <li class="nav-item fs-5">
-                    <a class="nav-link text-dark" aria-current="page" href="#">Acquista biglietto</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Prenota il tuo viaggio</a>
                   </li>
-                  <li class="nav-item fs-5">
-                    <a class="nav-link text-dark" aria-current="page" href="#">Offerte di viaggi</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1">Scopri le offerte</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown" aria-expanded="false">Area Clienti</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                      <li><a class="dropdown-item" href="#">Informazioni personali</a></li>
+                      <li><a class="dropdown-item" href="#">Informazioni sulla privacy</a></li>
+                      <li><a class="dropdown-item" href="#">Cronologia dei tuoi viaggi</a></li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -35,7 +53,7 @@
         <div class="row">
             <!--INIZIO FORM PER L'UTENTE-->
             <div class="col-12" id="form-sctn">
-                <h1 class="mb-4">COMPILA IL FORM</h1>
+                <h1 class="mb-4">INSERISCI I TUOI DATI DI VIAGGIO:</h1>
                 <div class="mb-2">
                     <label for="name"><strong>Nome e Cognome del passeggero</strong></label>
                     <input type="text" class="form-field" id="name">
@@ -60,7 +78,7 @@
             <hr class="mb-4 mt-4">
             <!--RISULTATO FINALE-->
             <div class="col-12" id="ticket-sctn">
-                <h1 class="mb-4">IL TUO BIGLIETTO</h1>
+                <h1 class="mb-4">IL TUO BIGLIETTO:</h1>
                 <p>
                     <strong>Nome del passeggero: </strong><span id="name-place"></span>
                 </p>
@@ -78,7 +96,36 @@
                 </p>
             </div>
         </div>
-    </div>    
+    </div>
+    
+    <footer class="container-fluid bg-dark text-light">
+        <div class="row">
+            <div class="col-4">
+                <ul>
+                    <li>LOREM</li>
+                    <li>LOREM</li>
+                    <li>LOREM</li>
+                    <li>LOREM</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li>LOREM</li>
+                    <li>LOREM</li>
+                    <li>LOREM</li>
+                    <li>LOREM</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li>LOREM</li>
+                    <li>LOREM</li>
+                    <li>LOREM</li>
+                    <li>LOREM</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>

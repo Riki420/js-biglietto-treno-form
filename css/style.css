@@ -13,3 +13,22 @@
 .my-active{
     border-bottom: 4px solid grey;
 }
+
+
+
+/************** NAVBAR *****************/
+
+.text-green{
+    color: forestgreen;
+
+}
+.text-red{
+    color: red;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
