@@ -48,22 +48,22 @@
           </nav>
     </header>
     
-    <div class="container">
+    <div class="container mb-4">
     <!--MAIN-->
         <div class="row">
             <!--INIZIO FORM PER L'UTENTE-->
             <div class="col-12" id="form-sctn">
                 <h1 class="mb-4">INSERISCI I TUOI DATI DI VIAGGIO:</h1>
                 <div class="mb-2">
-                    <label for="name"><strong>Nome e Cognome del passeggero</strong></label>
+                    <label for="name"><strong>Nome e Cognome del passeggero:</strong></label>
                     <input type="text" class="form-field" id="name">
                 </div>
                 <div class="mb-2">
                     <label for="km"><strong>Quanti Km vorresti percorrere?</strong></label>
-                    <input type="number" class="form-field" id="km" min="5" value="5">
+                    <input type="number" class="form-field" id="km" min="5" value="5" step="5">
                 </div>
                 <div class="mb-2">
-                    <label for="age"><strong>Fascia d'età del passeggero</strong></label>
+                    <label for="age"><strong>Fascia d'età del passeggero:</strong></label>
                     <select id="age">
                         <option value="min"> - 18</option>
                         <option value="maj"> + 18</option>
@@ -98,31 +98,43 @@
         </div>
     </div>
     
-    <footer class="container-fluid bg-dark text-light">
+    <footer class="container-fluid bg-dark text-light py-2">
         <div class="row">
-            <div class="col-4">
-                <ul>
-                    <li>LOREM</li>
-                    <li>LOREM</li>
-                    <li>LOREM</li>
-                    <li>LOREM</li>
-                </ul>
-            </div>
-            <div class="col-4">
-                <ul>
-                    <li>LOREM</li>
-                    <li>LOREM</li>
-                    <li>LOREM</li>
-                    <li>LOREM</li>
-                </ul>
-            </div>
-            <div class="col-4">
-                <ul>
-                    <li>LOREM</li>
-                    <li>LOREM</li>
-                    <li>LOREM</li>
-                    <li>LOREM</li>
-                </ul>
+            <div class="col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-4">
+                            <a class="navbar-brand" href="#">
+                                <div>
+                                    <img src="./img/Logo_Trenitalia_2.png" alt="Logo_Trenitalia" class="w-75 mt-4">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 text-center mb-4">
+                            <ul class="my-list">
+                                <li><h4>Destinazioni Favorite</h4></li>
+                                <li>Zaccanesca</li>
+                                <li>Cedrecchia</li>
+                                <li>Madonna dei Fornelli</li>
+                                <li>S. Benedetto Val di Sambro</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 text-center mb-4">
+                            <ul class="my-list">
+                                <li><h4>Contatti</h4></li>
+                                <li>Ferroviestatoitaliano@treniveloci.it</li>
+                                <li>Sede Principale: Marte, via extra n.8</li>
+                                <li>Numero Verde: 800 900 700 ( non risponde nessuno )</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 text-center">
+                            <p class="text-light bg-danger text-uppercase mt-2">
+                                Tutti i treni targati Trenitalia subiranno perenni ritardi di minimo un ora, siete pregati di ignorarli. Trenitalia non vi augura un buon viaggio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </footer>

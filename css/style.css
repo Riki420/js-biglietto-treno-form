@@ -32,3 +32,8 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+.my-list{
+    display: inline;
+    list-style: none;
+}
