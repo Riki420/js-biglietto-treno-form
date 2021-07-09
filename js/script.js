@@ -101,3 +101,14 @@ resetButton.addEventListener('click', function(){
 
 
 });
+
+
+//* DROPDOWN MENU NAVBAR
+
+var dropDown = document.getElementById('drop-menu');
+
+function changeClass(){
+    dropDown.classList.add('show');
+}
+
+
