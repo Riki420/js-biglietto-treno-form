@@ -1,29 +1,5 @@
-.my-s-height{
-    min-height: 80px;
-}
-
 .my-border{
     border-bottom: 2px solid red;
-}
-
-.my-grow{
-    flex-grow: 0;
-}
-
-.my-active{
-    border-bottom: 4px solid grey;
-}
-
-
-
-/************** NAVBAR *****************/
-
-.text-green{
-    color: forestgreen;
-
-}
-.text-red{
-    color: red;
 }
 
 .navbar-collapse {
